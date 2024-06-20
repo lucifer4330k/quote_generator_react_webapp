@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 250px;
+    background: red;
+    width: 80%; /* changed from fixed width to percentage */
+    max-width: 780px; /* added max-width to maintain original width on large screens */
+    border-radius: 15px;
+}
+
+.quote {
+    padding: 60px 110px;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+.line {
+    width: 80%; /* changed from fixed width to percentage */
+    max-width: 680px; /* added max-width to maintain original width on large screens */
+    height: 1.5px;
+    background: white;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.author {
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* added media queries for responsiveness */
+
+@media only screen and (max-width: 1200px) {
+   .container {
+        margin-top: 150px; /* adjusted margin-top for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+   .container {
+        width: 90%; /* increased width for smaller screens */
+        margin-top: 100px; /* adjusted margin-top for smaller screens */
+    }
+   .quote {
+        padding: 40px 80px; /* adjusted padding for smaller screens */
+        font-size: 24px; /* adjusted font-size for smaller screens */
+    }
+   .line {
+        width: 90%; /* increased width for smaller screens */
+    }
+   .bottom {
+        margin: 20px 0px; /* adjusted margin for smaller screens */
+    }
+   .author {
+        font-size: 18px; /* adjusted font-size for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+   .container {
+        width: 95%; /* increased width for smaller screens */
+        margin-top: 50px; /* adjusted margin-top for smaller screens */
+    }
+   .quote {
+        padding: 20px 40px; /* adjusted padding for smaller screens */
+        font-size: 18px; /* adjusted font-size for smaller screens */
+    }
+   .line {
+        width: 95%; /* increased width for smaller screens */
+    }
+   .bottom {
+        margin: 10px 0px; /* adjusted margin for smaller screens */
+    }
+   .author {
+        font-size: 14px; /* adjusted font-size for smaller screens */
+    }
+}
